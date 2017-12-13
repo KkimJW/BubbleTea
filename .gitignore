@@ -1,0 +1,10 @@
+﻿# elipse project file
+.settings/
+.classpath
+.project
+
+# class files
+bin/
+
+#MAC OS
+.DS_STORE
