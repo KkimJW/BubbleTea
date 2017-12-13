@@ -1,30 +1,33 @@
+import java.util.Scanner;
 
 public class BubbleTea {
+	Scanner sc = new Scanner(System.in);
 	int bubbletea = 3500;
-	int price;
-	boolean menu;
-	int option;
-	
-	BubbleTea(int option) {
-		this.option = option;
-	}
+	int price = 0;
 	
 	public void menuboard() {
-		while(menu==true) {
+		
+		while(true) {
+			System.out.print("ë²ˆí˜¸ ìž…ë ¥:");
+			int option = sc.nextInt();
 			if (option == 0) {
 				price = bubbletea;
+				System.out.println("ì´" + price + "ì› ìž…ë‹ˆë‹¤.");
+				break;
 			}
 			if (option == 1) {
 				price = bubbletea+300;
+				System.out.println("ì´" + price + "ì› ìž…ë‹ˆë‹¤.");
+				break;
 			}
 			if (option == 2) {
 				price = bubbletea+500;
+				System.out.println("ì´" + price + "ì› ìž…ë‹ˆë‹¤.");
+				break;
 			}
 			if (option>2 || option<0) {
-				System.out.println("ÁÖ¹®À» Àß¸øÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
-				menu = false;
+				System.out.println("ì£¼ë¬¸ì„ ìž˜ëª»í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 			}
 		}
-		System.out.println("ÃÑ" + price + "¿ø ÀÔ´Ï´Ù.");
 	}
 }
