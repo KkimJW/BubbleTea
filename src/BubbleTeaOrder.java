@@ -1,15 +1,12 @@
-import java.util.Scanner;
 
 public class BubbleTeaOrder {
-	static int option;
-	static BubbleTea bubble = new BubbleTea(option);
-	static Scanner sc = new Scanner(System.in);
 	
 	public static void main(String args[]) {
-		System.out.println("ÁÖ¹®ÇØÁÖ¼¼¿ä.");
-		System.out.println("0.¹öºíÆ¼¸¸ (3500¿ø)\n1.¾óÀ½0% (300¿øÃß°¡)\n2.¹öºíÃß°¡ (500¿øÃß°¡)");
-		System.out.print("¿É¼Ç ÀÔ·Â:");
-		option = sc.nextInt();
+		BubbleTea bubble = new BubbleTea();
+		
+		System.out.println("ì£¼ë¬¸í•´ì£¼ì„¸ìš”.");
+		System.out.println("0.ë²„ë¸”í‹°ë§Œ (3500ì›)\n1.ì–¼ìŒ0% (300ì›ì¶”ê°€)\n2.ë²„ë¸”ì¶”ê°€ (500ì›ì¶”ê°€)");
+		
 		bubble.menuboard();
 	}
 }
